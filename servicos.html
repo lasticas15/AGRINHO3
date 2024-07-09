@@ -1,0 +1,76 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos serviços</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&display=swap" 
+        rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="caixa">
+            <h1><img src="img/logo2.png" class="imagem_h1" alt="logo campagro"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo"></h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/1.png"
+                            alt="Pé de Tomate"></div>
+                    <div class="swiper-slide"><img src="img/2.png"
+                            alt="Pé de Pepino"></div>
+                    <div class="swiper-slide"><img src="img/3.png"
+                            alt="Pimentão"></div>
+                    <div class="swiper-slide"><img src="img/4.png" alt="Abóbrinha"></div>
+                    <div class="swiper-slide"><img src="img/5.png" alt="Beringela"></div>
+                    <div class="swiper-slide"><img src="img/6.png" alt="Plantação de Milho"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+    <footer>
+        <img src="img/logo2.png" alt="Logo da Campagro">
+        <p class="copyright">&copy; Copyright Campagro - 2024</p>
+    </footer>
+</body>
+
+</html>
+        
